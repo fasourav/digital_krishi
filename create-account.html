@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Digital Krishi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="brand-form-container">
+        <!-- Brand Name -->
+        <h1 class="brand-name">
+            <span class="text-orange">Digital</span>  
+            <span class="text-teal">Krishi</span>
+        </h1>
+
+        <!-- Form Card -->
+        <div class="card">
+            <h3 class="text-center mb-3">Create Account</h3>
+            <form onsubmit="return validateForm()">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="first-name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="district" class="form-label">District</label>
+                        <input type="text" class="form-control" id="district" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="area-name" class="form-label">Area Name</label>
+                        <input type="text" class="form-control" id="area-name" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <div class="input-group">
+                        <span class="input-group-text">+880</span>
+                        <input type="text" class="form-control" id="phone" placeholder="XXXXXXXXXX" maxlength="10" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="police-station" class="form-label">Police Station</label>
+                        <input type="text" class="form-control" id="police-station" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="post-code" class="form-label">Post Code</label>
+                        <input type="text" class="form-control" id="post-code" placeholder="XXXX" maxlength="4" pattern="[0-9]{4}" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" minlength="6" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" minlength="6" required>
+                    </div>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label for="terms" class="form-check-label">I agree to the Terms & Conditions</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+            </form>
+
+            <div class="text-center mt-3">
+                <a href="index.html" class="text-decoration-none">Back to Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
